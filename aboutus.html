@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aboutus.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/createaccount.js"></script>
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>About Us</title>
+    <script>
+    $(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+    });
+    </script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- About Us starts here-->
+    <center>
+        <div class="#">
+            <h1 class="subtitle"> Welcome! </h1> <br>
+            <p class="info">
+                This is a university-wide web service to easily access<br>
+                a substantial database of events and RSO's<br><br>
+
+                We strive to help all students from many locations while<br>
+                easily being able to implement your event or RSO<br><br>
+
+                Using a wide range of selected information you can find<br>
+                exact map location, event type, and many more!<br><br>
+            </p>
+
+            <h1 class="subtitle"> Have an event or RSO? </h1><br>
+            <p class="info">
+                <a href="#" style="text-decoration: none" onclick="document.getElementById('signup').style.display='block'"
+                style="width:auto;">
+                <img src="images/user.png"> <br> Create your account!
+            </a>
+            <br><br>
+            <img src="images/users-group.png"> <br> Find 5 people to create your RSO
+            <br><br>
+            <img src="images/checklist.png"> <br> Fill out your event details
+        </p>
+        <br><br>
+    </div>
+    <!-- End of About Us -->
+
+</center>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+</body>

@@ -1,40 +1,70 @@
 # CollegeEventsDBSystems
-Simplify college event management using our Java-based web app. Seamlessly handle registrations, schedules, resources, and feedback with HTML, CSS, and Java technologies.
+Term Project
+COP 4710 Spring 2017
 
-# College Event Management System
+Application: College Event Website
 
-Streamline event management within your college or university with our intuitive web application. This project provides an efficient platform for event creation, participant registration, scheduling, resource allocation, feedback collection, and analytics.
+**Problem:**
 
-## Technologies Used
-- Frontend: HTML, CSS
-- Backend: Java
-- Database: [Specify Your Database]
-- Frameworks: [List Any Relevant Frameworks]
-- Tools: [List Any Tools or Libraries Used]
+Most universities in the country hosts events around campus and off campus. These events are
+organized by college students in most of the cases. Students are clustered (RSOs) by different
+organizations, clubs, fraternities around campus. These events are of different types: social,
+fundraising, tech talks, etc. At the moment, each university has a website where they post their
+events for the upcoming weeks. One needs to check the website in order to add each event to
+his/her calendar. These events are just official events and not all events around the university
+are included. Another limitation is that one has no way to track weekly events.
 
-## Features
-- Event Creation: Organizers can easily create new events, specifying details such as date, time, and location.
-- Participant Registration: Students and attendees can register for events online.
-- Event Schedule: Dynamic schedule displays event timelines for attendees' convenience.
-- Resource Allocation: Allocate venues, equipment, and materials to events efficiently.
-- Feedback Collection: Gather participant feedback to improve future events.
-- Analytics: Generate reports on attendance, feedback, and resource utilization.
+**Project Description:** 
 
-## Setup and Usage
-1. [Provide step-by-step instructions to set up the project locally]
-2. [Explain how to run the application]
+You are asked to implement a web application that solves the aforementioned problems. Any
+student may register with this application to obtain a user ID and a password. There are three
+user levels: super admin who creates a profile for a university (name, location, description,
+number of students, pictures, etc.), admin who owns an RSO and may host events, and student
+who uses the application to look up information about the various events.
+Admin can create events with name, event category, description, time, date, location, contact
+phone, and contact email address. A location should be set from a map (Bing, Google, open
+street map) with name, latitude, longitude, etc. In order to populate the database, one can use
+feeds (e.g., RSS, XML) from events.ucf.edu. Each admin is affiliated with one university, and
+one or more RSOs. A student user can request to create a new RSO or to join an existent one.
+A new RSO can be created with at least 5 other students with the same email domain, e.g.
+@knights.ucf.edu; and one of them should be assigned as an administrator.
+Student can view events in their university by location, or by selecting the University they want
+to see the events from. They can retrieve events according to their level of access or scope. A
+student should be able to see all the events around its location or from RSOs they are following.
+There are different types of events(social, fundraising, tech talks, etc.). Each event can be public,
+private, or an RSO event. Public events can be seen by everyone; private events can be seen by
+the students of the host university; and an RSO events can only be seen by members of the RSO.
+In addition, events can be created without an RSO. Such events must be approved by the super
+admin. After an event has been published, users can add, remove, and edit comments on the
+event, as well as rating the event with up to 5 stars. The application should offer some social
+network integration, e.g. posting from the application to Facebook or Google.
 
-## Contributing
-Contributions are welcome! Please follow these guidelines:
-- [Explain how contributors can submit code]
-- [List any coding standards or guidelines]
+**Technical Requirements:**
 
-## License
-This project is licensed under the [Specify License Name] License - see the [LICENSE](LICENSE) file for details.
+1. The software must include at least 5 relational tables.
+2. The software must include at least 10 SQL queries.
+3. The website and database must support multiple concurrent users.
+4. The application must have a browser-based interface and can be deployed on Internet.
+5. The capabilities mentioned in the project description are worth 80 points (out of 100
+points). Each team can design and implement additional features for the remaining 20
+points. Extra credits will be given to outstanding user interface and special features.
+6. Programming languages that can be used for the project: HTML, Javascript, PHP, Java,
+CSS, and stored procedures. DBMS’s: Oracle, SQL Server, and MySQL. Other languages
+and DBMSs: check with the instructor.
 
-## Acknowledgements
-- [List any resources or tutorials that you used]
-- [Give credit to any libraries or frameworks used]
+**Grading:**
+- Group Demo/Presentation - 50%
+- Group Project Report - 40%
+- Participation/Attendance - 10%
 
-## Contact
-For questions or support, please contact [Your Name] at [Your Email Address].
+**Deliverables:**
+- Group’s Presentation slides
+- The design (ER diagram, relational schemas, …), database creation code (CREATE TABLE …, INSERT…, SELECT …, etc.), the software code (GUI, embedded SQL statements, etc.), …
+- Each group is to submit a project report, describing the development of the project including the design, data, queries and results, implementation, and comments/observations, etc.
+- Each group submits one DVD (or a flash drive) containing all the files--the slides and codes. Alternatively, the files (and their folders) can be compressed and submitted as a single Zip or rar file via Webcourses.
+
+**Important Dates:**
+- Milestones (ER-Model draft Design, …): TBA
+- Groups’ projects due date: (TBA).
+- Presentations dates: (TBA).
+- Group reports due date: (TBA).
